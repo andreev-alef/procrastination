@@ -16,5 +16,8 @@ and open the template in the editor.
   body {
     margin: 0px;
   }
+  .root > h1 {
+    font-family: 'Exo2';
+  }
 }
 /*# sourceMappingURL=main.css.map */
