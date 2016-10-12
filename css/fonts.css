@@ -16,6 +16,10 @@ and open the template in the editor.
   src: url('../lib/fonts/notoserif-regular.woff');
 }
 @font-face {
+  font-family: 'PT Mono';
+  src: url('../lib/fonts/pt_mono.woff');
+}
+@font-face {
   font-family: 'PT Sans';
   src: url('../lib/fonts/pt-sans.woff');
 }

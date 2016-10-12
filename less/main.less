@@ -12,11 +12,11 @@ and open the template in the editor.
 
 @variant_button_width: 200px;
 @variant_button_height: @variant_button_width;
-@wr-variants_width: 700px;
+@wr-groups_width: 700px;
 
 @media all{
     .root,
-    .wr-variants
+    .wr-groups
     {
         position: absolute;
     }
@@ -33,15 +33,15 @@ and open the template in the editor.
     .root{
         width: 100%;
     }
-    .wr-variants{
+    .wr-groups{
         text-align: center;
         border: solid 1px #FFF;
-        width: @wr-variants_width;
+        width: @wr-groups_width;
         left: @root_width/2;
         margin: 0px;
-        margin-left: -@wr-variants_width/2;
+        margin-left: -@wr-groups_width/2;
     }
-    .variants > .btn{
+    .exam_nav{
         width: @variant_button_width;
         height: @variant_button_height;
         padding: 0px;
@@ -49,7 +49,14 @@ and open the template in the editor.
         font-size: 82px;
         font-family: 'Noto Serif';
         text-align: center;
+        margin: 0px;
         margin-bottom: 10px;
         margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .example, .example_result{
+        font-family: 'PT Mono';
+        font-size: 40px;
     }
 }
