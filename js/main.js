@@ -6,6 +6,18 @@
 
 
 $(document).ready(function () {
+    var font_family = ['Allegretto',
+        'Cuprum',
+        'Exo2',
+        'Exo2 Light',
+        'Noto Serif',
+        'Open Sans',
+        'Open Sans Light',
+        'Oswald',
+        'Oswald Italic',
+        'PT Mono',
+        'PT Sans',
+        'PT Serif'];
     var A = parseInt($('#A').html());
     var B = parseInt($('#B').html());
     $('#C').val(A + B);
