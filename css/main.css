@@ -9,7 +9,8 @@ and open the template in the editor.
 */
 @media all {
   .root,
-  .wr-groups {
+  .wr-groups,
+  .wr-examples {
     position: absolute;
   }
 }
@@ -22,6 +23,7 @@ and open the template in the editor.
   }
   .root {
     width: 100%;
+    height: 100%;
   }
   .wr-groups {
     text-align: center;
@@ -47,16 +49,35 @@ and open the template in the editor.
   }
   .wr-examples {
     text-align: center;
+    top: 38%;
+    margin-top: -70px;
+    left: 50%;
+    margin-left: -325px;
+    border: solid 1px #fff;
+    height: 140px;
+    width: 650px;
   }
   .example,
   .example_result {
     font-family: 'PT Mono';
     font-size: 40px;
+    margin-top: 3px;
   }
   .example_result {
     height: 60px;
     text-align: center;
     padding: 0;
+  }
+  .btn-pre,
+  .btn-next {
+    /*width: 150px;*/
+    margin-top: 20px;
+  }
+  .btn-pre {
+    margin-right: 20px;
+  }
+  .btn-next {
+    margin-left: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */

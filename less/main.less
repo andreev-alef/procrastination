@@ -9,14 +9,18 @@ and open the template in the editor.
 */
 
 @root_width: 100%;
+@root_height: 100%;
 
 @variant_button_width: 200px;
 @variant_button_height: @variant_button_width;
 @wr-groups_width: 700px;
+@wr-examples_width: 650px;
+@wr-examples_height: 140px;
 
 @media all{
     .root,
-    .wr-groups
+    .wr-groups,
+    .wr-examples
     {
         position: absolute;
     }
@@ -31,7 +35,8 @@ and open the template in the editor.
         font-family: 'Exo2';
     }
     .root{
-        width: 100%;
+        width: @root_width;
+        height: @root_height;
     }
     .wr-groups{
         text-align: center;
@@ -57,14 +62,33 @@ and open the template in the editor.
     }
     .wr-examples{
         text-align: center;
+        top: @root_height * 0.38;
+        margin-top: -@wr-examples_height/2;
+        left: @root_width/2;
+        margin-left: -@wr-examples_width/2;
+        border: solid 1px #fff;
+        height: @wr-examples_height;
+        width: @wr-examples_width;
+
     }
     .example, .example_result{
         font-family: 'PT Mono';
         font-size: 40px;
+        margin-top: 3px;
     }
     .example_result{
         height: 60px;
         text-align: center;
         padding: 0;
+    }
+    .btn-pre, .btn-next{
+        /*width: 150px;*/
+        margin-top: 20px;
+    }
+    .btn-pre,{
+        margin-right: 20px;
+    }
+    .btn-next{
+        margin-left:  20px;
     }
 }
