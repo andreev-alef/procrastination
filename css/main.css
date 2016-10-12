@@ -45,10 +45,18 @@ and open the template in the editor.
     margin-left: 5px;
     margin-right: 5px;
   }
+  .wr-examples {
+    text-align: center;
+  }
   .example,
   .example_result {
     font-family: 'PT Mono';
     font-size: 40px;
+  }
+  .example_result {
+    height: 60px;
+    text-align: center;
+    padding: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

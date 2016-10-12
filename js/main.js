@@ -6,7 +6,7 @@
 
 
 $(document).ready(function () {
-    var A = parseInt($('#A').val());
-    var B = parseInt($('#B').val());
+    var A = parseInt($('#A').html());
+    var B = parseInt($('#B').html());
     $('#C').val(A + B);
 });
