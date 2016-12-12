@@ -4,10 +4,23 @@
  * and open the template in the editor.
  */
 
+function getNum() {
+    return Math.floor(Math.random() * 100);
+}
+
 $(document).ready(function () {
 
     $('#btn_next').click(function () {
-        $('#A').html(Math.random());
+        var exams = {
+            exam1: {"a": getNum(), "b": getNum()},
+            exam2: {"a": getNum(), "b": getNum()},
+            exam3: {"a": getNum(), "b": getNum()},
+            exam4: {"a": getNum(), "b": getNum()},
+            exam5: {"a": getNum(), "b": getNum()}
+        }
+
+        $('#A').html(exams.exam1.a);
+        $('#B').html(exams.exam1.b);
     });
 });
 
