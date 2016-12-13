@@ -10,7 +10,9 @@ and open the template in the editor.
 @media all {
   .root,
   .wr-groups,
-  .wr-examples {
+  .wr-examples,
+  .btn-next,
+  .btn-pre {
     position: absolute;
   }
 }
@@ -50,14 +52,14 @@ and open the template in the editor.
   .wr-examples {
     text-align: center;
     top: 38%;
-    margin-top: -70px;
+    margin-top: -100px;
     left: 50%;
     margin-left: -325px;
     padding-top: 30px;
     padding-bottom: 30px;
     border: solid 1px #ddd;
     border-radius: 5px;
-    /*height: @wr-examples_height;*/
+    height: 200px;
     width: 650px;
   }
   .example,
@@ -74,14 +76,13 @@ and open the template in the editor.
   }
   .btn-pre,
   .btn-next {
-    /*width: 150px;*/
-    margin-top: 20px;
+    bottom: 27px;
   }
   .btn-pre {
-    margin-right: 20px;
+    left: 60px;
   }
   .btn-next {
-    margin-left: 20px;
+    right: 60px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -28,6 +28,8 @@ $(document).ready(function () {
     $('#step').html(i + 1);
     $('#A').html(exams[i].a);
     $('#B').html(exams[i].b);
+    $('#btn_pre').animate({'opacity': 0}, 'fast');
+    $('#btn_pre').css({'cursor': 'default'});
 
     $('#btn_next').click(function () {
         i++;
@@ -35,7 +37,14 @@ $(document).ready(function () {
             $('#step').html(i + 1);
             $('#A').html(exams[i].a);
             $('#B').html(exams[i].b);
-        } else {
+            $('#btn_pre').animate({'opacity': 1}, 'fast');
+            $('#btn_pre').css({'cursor': 'pointer'});
+        }
+        if (i === (N - 1)) {
+            $('#btn_next').animate({'opacity': 0}, 'fast');
+            $('#btn_next').css({'cursor': 'default'});
+        }
+        if (i > N) {
             i = N - 1;
         }
     });
@@ -45,7 +54,14 @@ $(document).ready(function () {
             $('#step').html(i + 1);
             $('#A').html(exams[i].a);
             $('#B').html(exams[i].b);
-        } else {
+            $('#btn_next').animate({'opacity': 1}, 'fast');
+        }
+        if (i === 0) {
+            $('#btn_pre').animate({'opacity': 0}, 'fast');
+            $('#btn_pre').css({'cursor': 'default'});
+
+        }
+        if (i < 0) {
             i = 0;
         }
     });

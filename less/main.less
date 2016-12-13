@@ -15,12 +15,15 @@ and open the template in the editor.
 @variant_button_height: @variant_button_width;
 @wr-groups_width: 700px;
 @wr-examples_width: 650px;
-@wr-examples_height: 140px;
+@wr-examples_height: 200px;
 
 @media all{
     .root,
     .wr-groups,
-    .wr-examples
+    .wr-examples,
+    /*.btn-group-pre_next,*/
+    .btn-next,
+    .btn-pre
     {
         position: absolute;
     }
@@ -70,7 +73,7 @@ and open the template in the editor.
         padding-bottom: 30px;
         border: solid 1px #ddd;
         border-radius: 5px;
-        /*height: @wr-examples_height;*/
+        height: @wr-examples_height;
         width: @wr-examples_width;
 
     }
@@ -85,14 +88,14 @@ and open the template in the editor.
         text-align: center;
         padding: 0;
     }
+
     .btn-pre, .btn-next{
-        /*width: 150px;*/
-        margin-top: 20px;
+        bottom: 27px;
     }
     .btn-pre,{
-        margin-right: 20px;
+        left: 60px;
     }
     .btn-next{
-        margin-left:  20px;
+        right: 60px;
     }
 }
