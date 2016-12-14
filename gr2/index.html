@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>2 группа</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/fonts.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+        <script src="../lib/jquery-3.1.0.min.js"></script>
+        <script src="../lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script src="../js/gr2.js"></script>
+    </head>
+    <body>
+        <div class="root">
+            <div class="my_header">
+                <div class="preview">
+                    <span class="btn btn-primary preview-example" id="ex1">
+                        <span class="badge step">1</span>&nbsp;&nbsp;<span class="var_a"></span>&nbsp;+&nbsp;<span class="var_b"></span>
+                    </span>
+                    <span class="btn btn-primary preview-example" id="ex2">
+                        <span class="badge step">2</span>&nbsp;&nbsp;<span class="var_a"></span>&nbsp;+&nbsp;<span class="var_b"></span>
+                    </span>
+                    <span class="btn btn-primary preview-example" id="ex3">
+                        <span class="badge step">3</span>&nbsp;&nbsp;<span class="var_a"></span>&nbsp;+&nbsp;<span class="var_b"></span>
+                    </span>
+                    <span class="btn btn-primary preview-example" id="ex4">
+                        <span class="badge step">4</span>&nbsp;&nbsp;<span class="var_a"></span>&nbsp;+&nbsp;<span class="var_b"></span>
+                    </span>
+                    <span class="btn btn-primary preview-example" id="ex5">
+                        <span class="badge step">5</span>&nbsp;&nbsp;<span class="var_a"></span>&nbsp;+&nbsp;<span class="var_b"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="wr-examples">
+                <form class="form-inline">
+                    <div class="example">
+                        <span class="var_a" id="step"></span>)&nbsp;&nbsp;<span class="var_a" id="A"></span>&nbsp;+&nbsp;<span class="var_b" id="B">17</span>&nbsp;=&nbsp;<input class="form-control example_result" id="C" type="text" maxlength="4" size="4" />
+                    </div>
+                    <div class="btn-group-lg btn-group-pre_next">
+                        <div class="btn btn-primary btn-pre" id="btn_pre">
+                            <span class="glyphicon glyphicon-arrow-left"></span>
+                            <span>Предыдущий пример</span>
+                        </div><div class="btn btn-success btn-next" id="btn_next">
+                            <span>Следующий пример</span>
+                            <span class="glyphicon glyphicon-arrow-right"></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
